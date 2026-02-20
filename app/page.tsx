@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
     Sparkles,
-    Layout,
+    AppWindow,
     Code,
     Layers,
     Cloud,
@@ -23,7 +23,7 @@ export default function HomePage() {
         {
             title: "와이어프레임 생성",
             description: "Figma JSON 형식의 와이어프레임을 AI로 자동 생성합니다",
-            icon: Layout,
+            icon: AppWindow,
             href: "/wireframe",
             gradient: "from-secondary to-accent",
         },
