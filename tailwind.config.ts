@@ -29,6 +29,40 @@ const config: Config = {
         foreground: "var(--color-text)",
         surface: "var(--color-surface)",
         border: "var(--color-border)",
+        
+        // --- OVERRIDES FOR AI GENERATED HARDCODED COLORS ---
+        // Map common hardcoded colors to tokens so changes are reflected
+        white: "var(--color-text)", // Text-white becomes Text-primary color
+        black: "var(--color-background)",
+        slate: {
+            900: "var(--color-background)",
+            800: "var(--color-surface)",
+            50: "var(--color-text)",
+        },
+        gray: {
+            300: "var(--color-text)", // dim text
+            400: "var(--color-text)",
+        },
+        purple: {
+            900: "var(--color-secondary)",
+            500: "var(--color-primary)",
+            400: "var(--color-primary)",
+        },
+        blue: {
+            500: "var(--color-accent)",
+            600: "var(--color-accent)",
+        },
+        pink: {
+            500: "var(--color-secondary)",
+        },
+        violet: {
+            500: "var(--color-primary)",
+        },
+        indigo: {
+            500: "var(--color-accent)",
+        },
+        // ---------------------------------------------------
+
         destructive: {
           DEFAULT: "hsl(0 84.2% 60.2%)",
           foreground: "hsl(210 40% 98%)",
