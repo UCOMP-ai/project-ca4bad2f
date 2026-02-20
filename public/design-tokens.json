@@ -1,9 +1,9 @@
 {
   "colors": {
-    "text": "#c22938",
-    "accent": "#3ee91c",
+    "text": "#1E2634",
+    "accent": "#E8881A",
     "border": "#D1D9E6",
-    "primary": "#6b3a1a",
+    "primary": "#1A3A6B",
     "surface": "#FFFFFF",
     "secondary": "#2E6DB4",
     "background": "#F5F7FA"
@@ -34,7 +34,7 @@
     "line_height": "1.7",
     "heading_font": "Noto Sans KR",
     "heading_sizes": {
-      "h1": "100px",
+      "h1": "48px",
       "h2": "36px",
       "h3": "24px"
     },

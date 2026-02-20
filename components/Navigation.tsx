@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const NAV_LINKS = [
-    { href: '/kor/index.jsp', label: '홈' }
+    { href: '/kor', label: '홈' }
 ];
 
 export function Navigation() {
