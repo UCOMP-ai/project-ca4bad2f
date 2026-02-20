@@ -1,12 +1,12 @@
 {
   "colors": {
-    "text": "#6a00a3",
-    "accent": "#e91c89",
-    "border": "#ff2600",
-    "primary": "#428eff",
-    "surface": "#c49c9c",
+    "text": "#1E2634",
+    "accent": "#E8881A",
+    "border": "#D1D9E6",
+    "primary": "#1A3A6B",
+    "surface": "#FFFFFF",
     "secondary": "#2E6DB4",
-    "background": "#ababab"
+    "background": "#F5F7FA"
   },
   "borders": {
     "color": "#D1D9E6",
@@ -34,7 +34,7 @@
     "line_height": "1.7",
     "heading_font": "Noto Sans KR",
     "heading_sizes": {
-      "h1": "100px",
+      "h1": "48px",
       "h2": "36px",
       "h3": "24px"
     },
