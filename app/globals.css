@@ -1,11 +1,11 @@
-/* Updated at: 2026-02-20T02:00:20.136Z */
+/* Updated at: 2026-02-20T02:04:43.853Z */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Cache Debug Label: Remove this later */
 body::after {
-  content: 'Updated: 02:00:20';
+  content: 'Updated: 02:04:43';
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -19,13 +19,13 @@ body::after {
 }
 
 :root {
-  --color-primary: #1A3A6B;
+  --color-primary: #428eff;
   --color-secondary: #2E6DB4;
   --color-accent: #e91c89;
-  --color-background: #F5F7FA;
-  --color-text: #1E2634;
-  --color-surface: #FFFFFF;
-  --color-border: #D1D9E6;
+  --color-background: #ababab;
+  --color-text: #6a00a3;
+  --color-surface: #c49c9c;
+  --color-border: #ff2600;
   /* Font variables are managed by layout.tsx via next/font/google */
   --text-base: 16px;
   --text-h1: 48px;
@@ -75,4 +75,36 @@ h3 { font-size: var(--text-h3) !important; }
   /* Typography Mapping */
   .text-5xl, .md\:text-7xl { font-size: var(--text-h1) !important; line-height: 1.1; }
   .text-3xl { font-size: var(--text-h3) !important; }
+
+  /* COMPREHENSIVE COLOR OVERRIDES */
+  /* Force all hardcoded template colors to use tokens */
+  /* Gradient From / Text / Bg */
+  .from-purple-500, .from-violet-500, .from-indigo-500, .from-blue-500, .from-cyan-500, 
+  .text-purple-500, .text-violet-500, .text-indigo-500, .text-blue-500, .text-cyan-500,
+  .bg-purple-500, .bg-violet-500, .bg-indigo-500, .bg-blue-500, .bg-cyan-500 { 
+      --tw-gradient-from: var(--color-primary) !important; 
+      --tw-gradient-to: rgb(255 255 255 / 0) !important; 
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+      color: var(--color-primary) !important;
+      background-color: var(--color-primary) !important;
+  }
+
+  /* Gradient To / Text / Bg (Secondary Mapping) */
+  .from-pink-500, .from-red-500, .from-orange-500, .from-green-500, .from-emerald-500,
+  .to-pink-500, .to-red-500, .to-orange-500, .to-green-500, .to-emerald-500,
+  .text-pink-500, .text-red-500, .text-orange-500, .text-green-500, .text-emerald-500,
+  .bg-pink-500, .bg-red-500, .bg-orange-500, .bg-green-500, .bg-emerald-500 {
+      --tw-gradient-from: var(--color-secondary) !important;
+      --tw-gradient-to: var(--color-secondary) !important;
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+      color: var(--color-secondary) !important;
+      background-color: var(--color-secondary) !important;
+  }
+
+  /* Gradient Via / Accent Mapping */
+  .via-purple-900, .via-pink-500, .via-cyan-500 {
+      --tw-gradient-via: var(--color-accent) !important;
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to) !important;
+      color: var(--color-accent) !important;
+  }
 }
