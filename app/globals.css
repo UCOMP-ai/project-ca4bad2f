@@ -1,11 +1,11 @@
-/* Updated at: 2026-02-20T01:58:43.216Z */
+/* Updated at: 2026-02-20T02:00:20.136Z */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Cache Debug Label: Remove this later */
 body::after {
-  content: 'Updated: 01:58:43';
+  content: 'Updated: 02:00:20';
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -21,9 +21,9 @@ body::after {
 :root {
   --color-primary: #1A3A6B;
   --color-secondary: #2E6DB4;
-  --color-accent: #fb657b;
+  --color-accent: #e91c89;
   --color-background: #F5F7FA;
-  --color-text: #313a49;
+  --color-text: #1E2634;
   --color-surface: #FFFFFF;
   --color-border: #D1D9E6;
   /* Font variables are managed by layout.tsx via next/font/google */
