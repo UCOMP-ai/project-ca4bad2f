@@ -4,22 +4,54 @@ const config: Config = {
   darkMode: ["class"],
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       colors: {
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
-        accent: 'var(--color-accent)',
-        background: 'var(--color-background)',
-        foreground: 'var(--color-text)',
-        surface: 'var(--color-surface)',
-        border: 'var(--color-border)',
+        primary: {
+          DEFAULT: "var(--color-primary)",
+          foreground: "var(--color-background)", // Usually text on primary is inverse
+        },
+        secondary: {
+          DEFAULT: "var(--color-secondary)",
+          foreground: "var(--color-background)",
+        },
+        accent: {
+          DEFAULT: "var(--color-accent)",
+          foreground: "var(--color-text)",
+        },
+        background: "var(--color-background)",
+        foreground: "var(--color-text)",
+        surface: "var(--color-surface)",
+        border: "var(--color-border)",
+        muted: {
+          DEFAULT: "var(--color-surface)",
+          foreground: "var(--color-text)", // opacity handled by class
+        },
+        card: {
+          DEFAULT: "var(--color-surface)",
+          foreground: "var(--color-text)",
+        },
+        popover: {
+            DEFAULT: "var(--color-surface)",
+            foreground: "var(--color-text)",
+        },
       },
       fontFamily: {
-        heading: 'var(--font-heading)',
-        body: 'var(--font-body)',
+        heading: ['var(--font-heading)', 'sans-serif'],
+        body: ['var(--font-body)', 'sans-serif'],
+        sans: ['var(--font-body)', 'sans-serif'],
       },
       borderRadius: {
-        DEFAULT: 'var(--border-radius)',
+        lg: "var(--border-radius)",
+        md: "calc(var(--border-radius) - 2px)",
+        sm: "calc(var(--border-radius) - 4px)",
+        DEFAULT: "var(--border-radius)",
       },
       boxShadow: {
         card: 'var(--shadow-card)',
@@ -30,5 +62,4 @@ const config: Config = {
   },
   plugins: [require("tailwindcss-animate")],
 };
-
 export default config;
