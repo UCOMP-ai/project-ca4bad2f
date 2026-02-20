@@ -14,8 +14,9 @@ const config: Config = {
         border: 'var(--color-border)',
       },
       fontFamily: {
-        heading: 'var(--font-heading)',
-        body: 'var(--font-body)',
+        heading: ['var(--font-heading)'],
+        body: ['var(--font-body)'],
+        sans: ['var(--font-body)'], // [FIX] Force sans to use user body font
       },
       borderRadius: {
         DEFAULT: 'var(--border-radius)',
