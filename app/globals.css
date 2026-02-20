@@ -1,11 +1,11 @@
-/* Updated at: 2026-02-20T01:55:14.961Z */
+/* Updated at: 2026-02-20T01:58:43.216Z */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Cache Debug Label: Remove this later */
 body::after {
-  content: 'Updated: 01:55:14';
+  content: 'Updated: 01:58:43';
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -52,3 +52,27 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); letter-spacing: var(-
 h1 { font-size: var(--text-h1) !important; }
 h2 { font-size: var(--text-h2) !important; }
 h3 { font-size: var(--text-h3) !important; }
+
+/* AI Generated Content Overrides */
+/* These rules force the hardcoded template classes to obey user tokens */
+@layer utilities {
+  .from-slate-900 { --tw-gradient-from: var(--color-background) !important; --tw-gradient-to: rgb(255 255 255 / 0) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important; }
+  .via-purple-900 { --tw-gradient-via: var(--color-secondary) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to) !important; }
+  .to-slate-900 { --tw-gradient-to: var(--color-background) !important; }
+  .bg-slate-900 { background-color: var(--color-background) !important; }
+  
+  /* Text Colors: Map 'white' to main text color so it remains visible on light backgrounds */
+  .text-white { color: var(--color-text) !important; }
+  .text-gray-300 { color: var(--color-text) !important; opacity: 0.7; }
+  .text-gray-400 { color: var(--color-text) !important; opacity: 0.5; }
+  .text-purple-400 { color: var(--color-primary) !important; }
+  
+  /* UI Elements */
+  .bg-white\/5 { background-color: color-mix(in srgb, var(--color-text) 5%, transparent) !important; }
+  .border-white\/10 { border-color: color-mix(in srgb, var(--color-text) 10%, transparent) !important; }
+  .glass-effect { background: color-mix(in srgb, var(--color-background) 80%, transparent) !important; backdrop-filter: blur(10px); }
+  
+  /* Typography Mapping */
+  .text-5xl, .md\:text-7xl { font-size: var(--text-h1) !important; line-height: 1.1; }
+  .text-3xl { font-size: var(--text-h3) !important; }
+}
