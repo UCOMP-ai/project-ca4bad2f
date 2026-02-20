@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Noto_Sans_KR } from 'next/font/google';
+
+const fontSans = Noto_Sans_KR({ subsets: ['latin'], weight: ['400', '500', '700'] });
 import './globals.css';
 import { Navigation } from '@/components/Navigation';
 
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body>
+      <body className={fontSans.className}>
         <Navigation />
         <main>{children}</main>
       </body>
