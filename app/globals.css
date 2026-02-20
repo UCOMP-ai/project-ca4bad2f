@@ -1,11 +1,11 @@
-/* Updated at: 2026-02-20T01:50:53.535Z */
+/* Updated at: 2026-02-20T01:55:14.961Z */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Cache Debug Label: Remove this later */
 body::after {
-  content: 'Updated: 01:50:53';
+  content: 'Updated: 01:55:14';
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -49,6 +49,6 @@ body::after {
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: var(--font-body); font-size: var(--text-base); line-height: var(--line-height); color: var(--color-text); background-color: var(--color-background); }
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); letter-spacing: var(--letter-spacing); }
-h1 { font-size: var(--text-h1); }
-h2 { font-size: var(--text-h2); }
-h3 { font-size: var(--text-h3); }
+h1 { font-size: var(--text-h1) !important; }
+h2 { font-size: var(--text-h2) !important; }
+h3 { font-size: var(--text-h3) !important; }
