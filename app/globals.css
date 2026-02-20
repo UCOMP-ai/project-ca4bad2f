@@ -10,8 +10,7 @@
   --color-text: #1E2634;
   --color-surface: #FFFFFF;
   --color-border: #D1D9E6;
-  --font-heading: 'Noto Sans KR', sans-serif;
-  --font-body: 'Noto Sans KR', sans-serif;
+  /* Font variables are managed by layout.tsx via next/font/google */
   --text-base: 16px;
   --text-h1: 48px;
   --text-h2: 36px;
