@@ -1,12 +1,12 @@
 {
   "colors": {
-    "text": "#1E2634",
+    "text": "#6a00a3",
     "accent": "#e91c89",
-    "border": "#D1D9E6",
-    "primary": "#1A3A6B",
-    "surface": "#FFFFFF",
+    "border": "#ff2600",
+    "primary": "#428eff",
+    "surface": "#c49c9c",
     "secondary": "#2E6DB4",
-    "background": "#F5F7FA"
+    "background": "#ababab"
   },
   "borders": {
     "color": "#D1D9E6",
