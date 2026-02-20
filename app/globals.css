@@ -1,66 +1,60 @@
+/* Updated at: 2026-02-20T05:42:23.681Z */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Cache Debug Label: Remove this later */
+body::after {
+  content: 'Updated: 05:42:23';
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: black;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  z-index: 9999;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
 :root {
-  /* Colors */
-  --color-primary: #1A3A6B;
+  --color-primary: #6b3a1a;
   --color-secondary: #2E6DB4;
-  --color-accent: #E8881A;
+  --color-accent: #3ee91c;
   --color-background: #F5F7FA;
-  --color-text: #1E2634;
+  --color-text: #c22938;
   --color-surface: #FFFFFF;
   --color-border: #D1D9E6;
-
-  /* Typography */
-  --font-heading: 'Noto Sans KR', sans-serif;
-  --font-body: 'Noto Sans KR', sans-serif;
   --text-base: 16px;
-  --text-h1: 48px;
+  --text-h1: 100px;
   --text-h2: 36px;
   --text-h3: 24px;
   --line-height: 1.7;
   --letter-spacing: -0.02em;
-
-  /* Spacing */
   --spacing-section-padding: 100px 0;
   --spacing-element-gap: 24px;
   --container-max-width: 1280px;
-
-  /* Borders */
   --border-radius: 6px;
   --border-width: 1px;
   --border-color: #D1D9E6;
-
-  /* Shadows */
   --shadow-card: 0 4px 20px rgba(26, 58, 107, 0.08);
   --shadow-button: 0 2px 8px rgba(26, 58, 107, 0.20);
   --shadow-hover: 0 8px 32px rgba(26, 58, 107, 0.15);
-
-  /* Animation */
   --animation-duration: 0.3s;
   --animation-easing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-body); font-size: var(--text-base); line-height: var(--line-height); color: var(--color-text); background-color: var(--color-background); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); letter-spacing: var(--letter-spacing); }
+h1 { font-size: var(--text-h1) !important; }
+h2 { font-size: var(--text-h2) !important; }
+h3 { font-size: var(--text-h3) !important; }
 
-body {
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  line-height: var(--line-height);
-  color: var(--color-text);
-  background-color: var(--color-background);
+@layer utilities {
+  .gradient-primary { background: var(--color-primary); color: var(--color-background); }
+  /* Fallback overrides just in case */
+  .text-white { color: var(--color-text); }
+  .bg-slate-900 { background-color: var(--color-background); }
 }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  letter-spacing: var(--letter-spacing);
-}
-
-h1 { font-size: var(--text-h1); }
-h2 { font-size: var(--text-h2); }
-h3 { font-size: var(--text-h3); }
